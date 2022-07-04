@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #5ba5db87;
+    font-family: 'Kantumruy Pro', sans-serif;
+    width: 1080px;
+}
+/* to set the name*/
+#name{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #001e34;
+    transform: translateX(81%) translateY(300%);
+}
+
+/*to center the calculator*/
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*css for screen, screenContent, calculation and result*/
+.screen{
+    height: 150px;
+    background: #001e34;
+    margin: auto;
+}
+.screenContent{
+    text-align: end;
+    padding: 17px;
+    font-size: 30px;
+    user-select: none;
+}
+.calculation{
+    font-size: 12px;
+    color: white;
+    overflow: auto;
+    padding-top: 2rem;
+}
+.result{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    color: #fff;
+}
+
+/*css for table tr td and button keys, operator keys and math keys*/
+table{
+    background-color: #001e34;
+    border-collapse: collapse;
+}
+tr, td{
+    border: 0.2px solid black;
+    border-collapse: collapse;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    background: #002b4a;
+    color: white;
+    outline: none;
+}
+.operator{
+    color: #26b821;
+    /* font-family: 'Kantumruy Pro', sans-serif; */
+}
+.math{
+    color: #9a80e4;
+    /* font-family: 'Kantumruy Pro', sans-serif; */
+}
+
+/*css for button hover*/
+input[type="button"]:hover{
+    background-color: #ffa800;
+    color: white;
+    transition: all 0.5s linear;
+}
